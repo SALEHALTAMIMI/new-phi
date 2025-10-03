@@ -43,6 +43,16 @@
         }
       }
     </script>
+  <script>
+    // This script defines the necessary environment variables for the application to run on static hosting.
+    // IMPORTANT: You MUST replace "YOUR_API_KEY_HERE" with your actual Google AI API key before deployment.
+    // The application will not work without it.
+    window.process = {
+      env: {
+        API_KEY: "YOUR_API_KEY_HERE"
+      }
+    };
+  </script>
   <script type="importmap">
 {
   "imports": {
